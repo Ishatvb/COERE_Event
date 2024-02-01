@@ -127,6 +127,14 @@ h6 {
   margin-bottom: 10px;
 }
 
+.section-header h4 {
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
 .section-header p {
   text-align: center;
   padding: 0;
@@ -137,6 +145,46 @@ h6 {
 }
 
 .section-with-bg {
+  background-color: #f6f7fd;
+}
+
+/* Container Header
+--------------------------------*/
+
+.container-header {
+  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+
+.container-header h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.container-header h4 {
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.container-header p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #9195a2;
+}
+
+.container-with-bg {
   background-color: #f6f7fd;
 }
 
@@ -692,6 +740,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
   margin-bottom: 20px;
   color: #fff;
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
@@ -956,7 +1005,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
-# Hotels Section
+# Tracks Section
 --------------------------------------------------------------*/
 
 #hotels {
@@ -1385,6 +1434,63 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .form button[type="submit"]:hover {
   background: #e0072f;
+}
+
+
+/*--------------------------------------------------------------
+# timeline
+--------------------------------------------------------------*/
+
+.col header.title{
+	color: #11a372;
+	padding: 0px 0px 20px 30px;
+}
+.col .contents{
+	padding: 0px 30px;
+	border-left: 2px solid #bababa;
+}
+.col .contents .box{
+	position: relative;
+	padding: 20px;
+	border: 1px solid #eaeaea;
+	background-color: #ffffff;
+	cursor: pointer;
+	transition: all 0.4s;
+	margin-bottom: 20px;
+}
+.col .contents .box:hover{
+	box-shadow: 0px 3px 12px 0px #ccc;
+	border: 1px solid transparent;
+}
+.col .contents .box::before{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	right: calc(100% + 22px);
+	top: 0;
+	background-color: #f82249;
+	border: 2px solid white;
+}
+.box h4{
+	position: relative;
+}
+.box h3{
+	padding: 10px 0px 6px;
+}
+.box p{
+	line-height: 1.2;
+	color: #666;
+	font-size: 17px;
+}
+@media(max-width: 768px){
+	main.row{
+		grid-template-columns: 1fr;
+	}
+	.row .col:nth-child(2){
+		margin-top: 30px;
+	}
 }
 
 /*--------------------------------------------------------------
