@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>COERE</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="https://juet.ac.in/" class="scrollto"><img src="img/juetlogo.png" alt="Juet Logo" title="JUET"></a>
+      </div>
+      <div id="head">
+        <h2>Jaypee University of Engineering & Technology</h2>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">Overview</a></li>
+          <li><a href="#ogs">Organizing Committee</a>
+              <ul class="dropdown">
+                <li><a href="#gcc">General Conference Chair</a></li>
+                <li><a href="#">Technical Program Chair</a></li>
+                <li><a href="#">Technical Program Co-Chair</a></li>
+                <li><a href="#">Reviewing Panel</a></li>
+              </ul>
+          </li>
+          <li><a href="#speakers">Key Note Speakers</a></li>
+          <li><a href="#schedule">Call for Papers</a>
+            <ul class="dropdown">
+                <li><a href="#gcc">Abstract Submission</a></li>
+                <li><a href="#">Important Dates</a></li>
+                <li><a href="#">Tracks</a></li>
+              </ul>
+            </li>
+          <li><a href="#venue">Policies</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="buy-tickets"><a href="#buy-tickets">Login</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <main id="main" class="main-page">
+
+    <!--==========================
+      Abstract Submission Section
+    ============================-->
+    <section id="abstracts-details" class="wow fadeIn">
+      <div class="container">
+        <div class="section-header">
+          <h2>Abstract Submission</h2>
+          <p>Upload the Abstract as per given format</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required><br><br>
+          
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required><br><br>
+
+              <label for="contactno">Contact Number:</label>
+              <input type="tel" id="contactno" name="contactno" required><br><br>
+          
+              <label for="title">Title:</label>
+              <input type="text" id="title" name="title" required><br><br>
+          
+              <label for="institution">Name of Institution:</label>
+              <input type="text" id="institution" name="institution" required><br><br>
+          
+              <label for="track">Track:</label>
+              <select id="track" name="track">
+                  <option value="track1">Track 1</option>
+                  <option value="track2">Track 2</option>
+                  <option value="track3">Track 3</option>
+              </select><br><br>
+          
+              <label for="file">Select a file:</label>
+              <input type="file" id="file" name="file" required><br><br>
+          
+              <button type="submit">Upload</button>
+          </form>
+          
+          </div>
+
+          <div class="col-md-6">
+            <div class="details">
+              <h2>Abstract Template</h2>
+              <p>The acceptable word range for the abstract is 150 – 250 words.
+                Please download the <a href="img/Abstract Template.docx">abstract template</a> and follow the format carefully to avoid revisions.
+                Your abstract submission should be in English.
+                We encourage you to send an informative abstract (complete abstract) which is a summary of a paper’s substance including its background, purpose, methodology, results, and conclusion.
+                Please send in a brief biography together with the abstract.</p>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <img src="img/1.jpg" alt="TheEvenet">
+            <p>---</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Jaypee University of Engineering & Technology <br>
+              Guna, Madhya Pradesh<br>
+              India <br>
+              <strong>Phone:</strong> +91 xxxxxxxxx<br>
+              <strong>Email:</strong><a href="mailto:coere@jutguna.in">coere@jutguna.in</a><br>
+              <strong>Email:</strong><a href="mailto:coere@juet.ac.in">coere@juet.ac.in</a><br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
+      </div>
+      <div class="credits"> -->
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+        -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div> -->
+    <!-- </div> -->
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
