@@ -9,14 +9,15 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="img/juetlogo.png" rel="icon">
+  <link href="img/juetlogo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +28,54 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <style>
+   
+.gradient-brand-color {
+    background-image: -webkit-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
+    background-image: -ms-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
+    color: #fff;
+}
+.contact-info__wrapper {
+    overflow: hidden;
+    border-radius: .625rem .625rem 0 0
+}
 
+@media (min-width: 1024px) {
+    .contact-info__wrapper {
+        border-radius: 0 .625rem .625rem 0;
+        padding: 5rem !important
+    }
+}
+.contact-info__list span.position-absolute {
+    left: 0
+}
+.z-index-101 {
+    z-index: 101;
+}
+.list-style--none {
+    list-style: none;
+}
+.contact__wrapper {
+    background-color: #fff;
+    border-radius: 0 0 .625rem .625rem
+}
+
+@media (min-width: 1024px) {
+    .contact__wrapper {
+        border-radius: .625rem 0 .625rem .625rem
+    }
+}
+@media (min-width: 1024px) {
+    .contact-form__wrapper {
+        padding: 5rem !important
+    }
+}
+.shadow-lg, .shadow-lg--on-hover:hover {
+    box-shadow: 0 1rem 3rem rgba(132,138,163,0.1) !important;
+}  
+
+
+</style>
 </head>
 
 <body>
@@ -49,29 +97,30 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Home</a></li>
-          <li><a href="#about">Overview</a></li>
-          <li><a href="#ogs">Organizing Committee</a>
+          <li><a href="index.html #intro">Home</a></li>
+          <li><a href="index.html #about">Overview</a></li>
+          <li><a href="">Organizing Committee</a>
               <ul class="dropdown">
-                <li><a href="#gcc">General Conference Chair</a></li>
-                <li><a href="#">Technical Program Chair</a></li>
-                <li><a href="#">Technical Program Co-Chair</a></li>
-                <li><a href="#">Reviewing Panel</a></li>
+                <li><a href="index.html #ogs">Organizing Committee</a></li>
+                <li><a href="index.html #gcc">General Conference Chair</a></li>
+                <li><a href="index.html #tpc">Technical Program Chair</a></li>
+                <li><a href="index.html #tpcc">Technical Program Co-Chair</a></li>
+                <li><a href="index.html #rp">Reviewing Panel</a></li>
               </ul>
           </li>
-          <li><a href="#speakers">Key Note Speakers</a></li>
-          <li><a href="#schedule">Call for Papers</a>
+          <li><a href="index.html #speakers">Key Note Speakers</a></li>
+          <li><a href="">Call for Papers</a>
             <ul class="dropdown">
-                <li><a href="#gcc">Abstract Submission</a></li>
-                <li><a href="#">Important Dates</a></li>
-                <li><a href="#">Tracks</a></li>
-              </ul>
+                <li class="menu-active"><a href="abstractSubmission.html">Abstract Submission</a></li>
+                <li><a href="index.html #schedule">Important Dates</a></li>
+                <li><a href="index.html #tracks">Tracks</a></li>
+              </a></ul>
             </li>
-          <li><a href="#venue">Policies</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#sponsors">Sponsors</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="buy-tickets"><a href="#buy-tickets">Login</a></li>
+          <li><a href="index.html #policies">Policies</a></li>
+          <li><a href="index.html #gallery">Gallery</a></li>
+          <li><a href="index.html#sponsors">Sponsors</a></li>
+          <li><a href="index.html #contact">Contact</a></li>
+          <!-- <li class="buy-tickets"><a href="#buy-tickets">Login</a></li> -->
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -82,65 +131,140 @@
     <!--==========================
       Abstract Submission Section
     ============================-->
+    
+
+
     <section id="abstracts-details" class="wow fadeIn">
       <div class="container">
         <div class="section-header">
           <h2>Abstract Submission</h2>
-          <p>Upload the Abstract as per given format</p>
+          <p>Download the <a href="img/Abstract Template.docx">Abstract Template</a> and upload your abstract as per given format </p>
         </div>
 
-        <div class="row">
-          <div class="col-md-6">
-            <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required><br><br>
+        <div class="container">
+          <div class="contact__wrapper shadow-lg mt-n9">
+              <div class="row no-gutters">
+                  <div class="col-lg-5 contact-info__wrapper gradient-brand-color p-5 order-lg-2">
+                      <h3 class="color--white mb-5">Abstract Template</h3>
           
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required><br><br>
+                      <p>The acceptable word range for the abstract is 150 – 250 words.
+                        Please download the abstract template and follow the format carefully to avoid revisions.
+                        Your abstract submission should be in English.
+                        We encourage you to send an informative abstract (complete abstract) which is a summary of a paper’s substance including its background, purpose, methodology, results, and conclusion.
+                        Please send in a brief biography together with the abstract.</p>
+          
+                      <figure class="figure position-absolute m-0 opacity-06 z-index-100" style="bottom:0; right: 10px">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="444px" height="626px">
+                              <defs>
+                                  <linearGradient id="PSgrad_1" x1="0%" x2="81.915%" y1="57.358%" y2="0%">
+                                      <stop offset="0%" stop-color="rgb(255,255,255)" stop-opacity="1"></stop>
+                                      <stop offset="100%" stop-color="rgb(0,54,207)" stop-opacity="0"></stop>
+                                  </linearGradient>
+          
+                              </defs>
+                              <path fill-rule="evenodd" opacity="0.302" fill="rgb(72, 155, 248)" d="M816.210,-41.714 L968.999,111.158 L-197.210,1277.998 L-349.998,1125.127 L816.210,-41.714 Z"></path>
+                              <path fill="url(#PSgrad_1)" d="M816.210,-41.714 L968.999,111.158 L-197.210,1277.998 L-349.998,1125.127 L816.210,-41.714 Z"></path>
+                          </svg>
+                      </figure>
+                  </div>
+          
+                  <div class="col-lg-7 contact-form__wrapper p-5 order-lg-1">
+                      <form action="#" class="contact-form form-validate" >
+                          <div class="row">
+                              <div class="col-sm-6 mb-3">
+                                  <div class="form-group">
+                                      <label class="required-field" for="name">Name</label>
+                                      <input type="text" class="form-control" id="name" name="name" placeholder="Dr. Dhananjay R. Mishra" required>
+                                  </div>
+                              </div>
+          
+                              <div class="col-sm-6 mb-3">
+                                  <div class="form-group">
+                                      <label class="required-field" for="email">Email</label>
+                                      <input type="text" class="form-control" id="email" name="email" placeholder="dhananjaymishra@gmail.com" required>
+                                  </div>
+                              </div>
+          
+                              <div class="col-sm-6 mb-3">
+                                  <div class="form-group">
+                                      <label for="phone">Phone Number</label>
+                                      <input type="tel" class="form-control" id="phone" name="phone" placeholder="91xxxxxxxxxx" required>
+                                  </div>
+                              </div>
+          
+                              <div class="col-sm-6 mb-3">
+                                <div class="form-group">
+                                    <label for="title">Title</label>
+                                    <input type="text" class="form-control" id="title" name="title" placeholder="Renewable Energy ..." required>
+                                </div>
+                              </div>
 
-              <label for="contactno">Contact Number:</label>
-              <input type="tel" id="contactno" name="contactno" required><br><br>
-          
-              <label for="title">Title:</label>
-              <input type="text" id="title" name="title" required><br><br>
-          
-              <label for="institution">Name of Institution:</label>
-              <input type="text" id="institution" name="institution" required><br><br>
-          
-              <label for="track">Track:</label>
-              <select id="track" name="track">
-                  <option value="track1">Track 1</option>
-                  <option value="track2">Track 2</option>
-                  <option value="track3">Track 3</option>
-              </select><br><br>
-          
-              <label for="file">Select a file:</label>
-              <input type="file" id="file" name="file" required><br><br>
-          
-              <button type="submit">Upload</button>
-          </form>
-          
-          </div>
+                              <div class="col-sm-6 mb-3">
+                                <div class="form-group">
+                                    <label for="institution">Name of the Institution</label>
+                                    <input type="text" class="form-control" id="institution" name="institution" placeholder="Jaypee University of Engineering and Technology Guna" required>
+                                </div>
+                              </div>
 
-          <div class="col-md-6">
-            <div class="details">
-              <h2>Abstract Template</h2>
-              <p>The acceptable word range for the abstract is 150 – 250 words.
-                Please download the <a href="img/Abstract Template.docx">abstract template</a> and follow the format carefully to avoid revisions.
-                Your abstract submission should be in English.
-                We encourage you to send an informative abstract (complete abstract) which is a summary of a paper’s substance including its background, purpose, methodology, results, and conclusion.
-                Please send in a brief biography together with the abstract.</p>
-              
-            </div>
-          </div>
+                              <div class="col-sm-6 mb-3">
+                                <div class="form-group">
+                                    <label for="designation">Designation at Institution</label>
+                                    <input type="text" class="form-control" id="designation" name="designation" placeholder="Associate Professor" required>
+                                </div>
+                              </div>
+
+                              <div class="col-sm-12 mb-3">
+                                <div class="form-group">
+                                    <label for="track">Track</label>
+                                    <select id="track" name="track" required style="width: 90%;">
+                                      <option value="track1">Track 1: AI for Energy Sustainability (Conference Theme)</option>
+                                      <option value="track2">Track 2: Sustainable Buildings, Communities, and Cities</option>
+                                      <option value="track3">Track 3: Energy Storage Separate: Thermal, Mechanical, Thermochemical</option>
+                                      <option value="track4">Track 4: Research for the Clean Energy Transition (Socio-technical, Education, and Policy)</option>
+                                      <option value="track5">Track 5: Solar Power 1: Optical Systems, Receivers and Reactors</option>
+                                      <option value="track6">Track 6: Concentrating Solar Power 2: Heat Exchangers, Energy Storage System, and the Power Block</option>
+                                      <option value="track7">Track 7: Concentrating Solar Power 3: Technoeconomic, Lifecycle Analyses, Balance of Plant</option>
+                                      <option value="track8">Track 8: Solar Chemistry: Thermochemistry, Photocatalysis, and Photo-electrocatalysis</option>
+                                      <option value="track9">Track 9: Photovoltaic & Electrochemical Technologies</option>
+                                      <option value="track10">Track 10: Alternative Energy Conversation Technology (including Wind, Geothermal, Hydro, and Ocean)</option>
+                                      <option value="track11">Track 11: Process Heat for Desalination and Industrial Decarbonization</option>
+                                      <option value="track12">Track 12: Hydrogen Energy, Alternative Fuels, Bioenergy, and Biofuels</option>
+                                      <option value="track13">Track 13: Carbon Capture & Cleaner Fossil Fuel Technologies</option>
+                                      <option value="track14">Track 14: Smart grid and Energy efficiency </option>
+                                      <option value="track15">Track 15: Sustainable Manufacturing Processes for Low Carbon</option>
+                                      <option value="track16">Track 16: Lightning Talks</option>
+                                      <option value="track17">Track 17:  Poster Presentations</option>
+
+                                    </select>                                
+                                </div>
+                              </div>
+
+                              <div class="col-sm-12 mb-3">
+                                <div class="form-group">
+                                    <label for="file">Select a file:</label>
+                                    <input type="file" id="file" name="file" required>                                
+                                  </div>
+                              </div>
+
+                            
           
-        </div>
+                              <div class="col-sm-12 mb-3">
+                                  <button type="submit" name="submit" class="btn btn-primary">Upload</button>
+                              </div>
+          
+                          </div>
+                      </form>
+                  </div>
+                  <!-- End Contact Form Wrapper -->
+          
+              </div>
+          </div>
+      </div>
       </div>
 
     </section>
 
   </main>
-
 
 
   <!--==========================
@@ -152,31 +276,20 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <img src="img/1.jpg" alt="TheEvenet">
-            <p>---</p>
+            <img src="img/Jaypee-Group.jpg" alt="Jaypee_Group">
+            <!-- <p>---</p> -->
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="https://www.jiit.ac.in/">JIIT Noida</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="https://www.juet.ac.in/">JUET Guna</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="https://www.juit.ac.in/">JUIT Solan</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="https://jaypeeu.ac.in/">JU Anoopshahr</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
 
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
@@ -189,34 +302,19 @@
               <strong>Email:</strong><a href="mailto:coere@juet.ac.in">coere@juet.ac.in</a><br>
             </p>
 
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
+            <!-- <div class="social-links">
+              <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fjuet_official" class="twitter"><img src='img/twitter.png' alt='Twitter'><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/JaypeeUniversityGuna/" class="facebook"><i class="fa fa-facebook"><img src='img/facebook.png' alt='Facebook'></i></a>
+              <a href="https://www.instagram.com/jaypee_university_guna/?hl=en" class="instagram"><i class="fa fa-instagram"><img src='img/instagram.jpg' alt='Instagram'></i></a>
+              <a href="https://www.youtube.com/channel/UCGZys7YYR7DAFDg0TcXxY4A" class="google-plus"><i class="fa fa-google-plus"><img src='img/youtube.png' alt='Youtube'></i></a>
+              <a href="https://www.linkedin.com/school/jaypee-university-of-engineering-and-technology/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=in" class="linkedin"><i class="fa fa-linkedin"><img src='img/linkedin.png' alt='Linkedin'></i></a>
+            </div> -->
 
           </div>
 
         </div>
       </div>
     </div>
-
-    <!-- <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
-      </div>
-      <div class="credits"> -->
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
-        -->
-        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div> -->
-    <!-- </div> -->
   </footer><!-- #footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
