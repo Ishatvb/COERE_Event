@@ -73,9 +73,12 @@
 .shadow-lg, .shadow-lg--on-hover:hover {
     box-shadow: 0 1rem 3rem rgba(132,138,163,0.1) !important;
 }  
-
-
-
+#header{
+    height: 120px;
+}
+#abstracts-details{
+    padding: 20px 0;
+}
 </style>
 </head>
 
@@ -96,34 +99,7 @@
         <h2>Jaypee University of Engineering & Technology</h2>
       </div>
 
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li><a href="index.html #intro">Home</a></li>
-          <li><a href="index.html #about">Overview</a></li>
-          <li><a href="">Organizing Committee</a>
-              <ul class="dropdown">
-                <li><a href="index.html #ogs">Organizing Committee</a></li>
-                <li><a href="index.html #gcc">General Conference Chair</a></li>
-                <li><a href="index.html #tpc">Technical Program Chair</a></li>
-                <li><a href="index.html #tpcc">Technical Program Co-Chair</a></li>
-                <li><a href="index.html #rp">Reviewing Panel</a></li>
-              </ul>
-          </li>
-          <li><a href="index.html #speakers">Key Note Speakers</a></li>
-          <li><a href="">Call for Papers</a>
-            <ul class="dropdown">
-                <li class="menu-active"><a href="abstractSubmission.html">Abstract Submission</a></li>
-                <li><a href="index.html #schedule">Important Dates</a></li>
-                <li><a href="index.html #tracks">Tracks</a></li>
-              </a></ul>
-            </li>
-          <li><a href="index.html #policies">Policies</a></li>
-          <li><a href="index.html #gallery">Gallery</a></li>
-          <li><a href="index.html#sponsors">Sponsors</a></li>
-          <li><a href="index.html #contact">Contact</a></li>
-          <li class="login"><a href="#login">Login</a></li>
-        </ul>
-      </nav><!-- #nav-menu-container -->
+      
     </div>
   </header><!-- #header -->
 
@@ -138,21 +114,94 @@
     <section id="abstracts-details" class="wow fadeIn">
       <div class="container">
         <div class="section-header">
-          <h2>Abstract Submission</h2>
-          <p>Download the <a href="img/Abstract Template.docx">Abstract Template</a> and upload your abstract as per given format </p>
+          <h2>Register</h2>
+          <p>Already have a account, <a href="login.html">Login Here</a></p>
         </div>
 
         <div class="container">
           <div class="contact__wrapper shadow-lg mt-n9">
               <div class="row no-gutters">
                   <div class="col-lg-5 contact-info__wrapper gradient-brand-color p-5 order-lg-2">
-                      <h3 class="color--white mb-5" style="margin: 0;">Abstract Template</h3>
-          
-                      <p style="text-align: justify;">The acceptable word range for the abstract is 150 – 250 words.
-                        Please download the abstract template and follow the format carefully to avoid revisions.
-                        Your abstract submission should be in English.
-                        We encourage you to send an informative abstract (complete abstract) which is a summary of a paper’s substance including its background, purpose, methodology, results, and conclusion.
-                        Please send in a brief biography together with the abstract.</p>
+                      <div class="ag-format-container">
+                        <div class="ag-courses_box">
+
+                            <div class="ag-courses_item">
+                                <a href="#" class="ag-courses-item_link">
+                                  <div class="ag-courses-item_bg"></div>
+                          
+                                  <div class="ag-courses-item_title">
+                                    Student Registration
+                                  </div>
+                          
+                                  <div class="ag-courses-item_date-box">
+                                    Fee:
+                                    <span class="ag-courses-item_date">
+                                      USD 199
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                      
+                          <div class="ag-courses_item">
+                            <a href="#" class="ag-courses-item_link">
+                              <div class="ag-courses-item_bg"></div>
+                      
+                              <div class="ag-courses-item_title">
+                                Early Bird Registration
+                              </div>
+                      
+                              <div class="ag-courses-item_date-box">
+                                Fee:
+                                <span class="ag-courses-item_date">
+                                  USD 499
+                                </span>
+                              </div>
+                              <p>(15<sup>th</sup>September 2024)</p>
+                            </a>
+                          </div>
+                        
+                      
+                        <div class="ag-courses_item">
+                            <a href="#" class="ag-courses-item_link">
+                              <div class="ag-courses-item_bg"></div>
+                      
+                              <div class="ag-courses-item_title">
+                                Standard Registration
+                              </div>
+                      
+                              <div class="ag-courses-item_date-box">
+                                Fee:
+                                <span class="ag-courses-item_date">
+                                  USD 799
+                                </span>
+                              </div>
+                              <p>(15<sup>th</sup>October 2024)</p>
+                            </a>
+                          </div>
+                      
+                          <div class="ag-courses_item">
+                            <a href="#" class="ag-courses-item_link">
+                              <div class="ag-courses-item_bg"></div>
+                      
+                              <div class="ag-courses-item_title">
+                                Late Registration
+                              </div>
+                      
+                              <div class="ag-courses-item_date-box">
+                                Fee:
+                                <span class="ag-courses-item_date">
+                                  USD 999
+                                </span>
+                              </div>
+                              <p>(30<sup>th</sup>October 2024)</p>
+                            </a>
+                          </div>
+
+                      
+                        </div>
+                      </div>
+
+                        
           
                       <figure class="figure position-absolute m-0 opacity-06 z-index-100" style="bottom:0; right: 10px">
                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="444px" height="626px">
@@ -195,8 +244,8 @@
           
                               <div class="col-sm-6 mb-3">
                                 <div class="form-group">
-                                    <label for="title">Title</label>
-                                    <input type="text" class="form-control" id="title" name="title" placeholder="Renewable Energy ..." required>
+                                    <label for="country">Country</label>
+                                    <input type="text" class="form-control" id="country" name="country" placeholder="India" required>
                                 </div>
                               </div>
 
@@ -214,43 +263,19 @@
                                 </div>
                               </div>
 
-                              <div class="col-sm-12 mb-3">
-                                <div class="form-group">
-                                    <label for="track">Track</label>
-                                    <select id="track" name="track" required style="width: 90%;">
-                                      <option value="track1">Track 1: AI for Energy Sustainability (Conference Theme)</option>
-                                      <option value="track2">Track 2: Sustainable Buildings, Communities, and Cities</option>
-                                      <option value="track3">Track 3: Energy Storage Separate: Thermal, Mechanical, Thermochemical</option>
-                                      <option value="track4">Track 4: Research for the Clean Energy Transition (Socio-technical, Education, and Policy)</option>
-                                      <option value="track5">Track 5: Solar Power 1: Optical Systems, Receivers and Reactors</option>
-                                      <option value="track6">Track 6: Concentrating Solar Power 2: Heat Exchangers, Energy Storage System, and the Power Block</option>
-                                      <option value="track7">Track 7: Concentrating Solar Power 3: Technoeconomic, Lifecycle Analyses, Balance of Plant</option>
-                                      <option value="track8">Track 8: Solar Chemistry: Thermochemistry, Photocatalysis, and Photo-electrocatalysis</option>
-                                      <option value="track9">Track 9: Photovoltaic & Electrochemical Technologies</option>
-                                      <option value="track10">Track 10: Alternative Energy Conversation Technology (including Wind, Geothermal, Hydro, and Ocean)</option>
-                                      <option value="track11">Track 11: Process Heat for Desalination and Industrial Decarbonization</option>
-                                      <option value="track12">Track 12: Hydrogen Energy, Alternative Fuels, Bioenergy, and Biofuels</option>
-                                      <option value="track13">Track 13: Carbon Capture & Cleaner Fossil Fuel Technologies</option>
-                                      <option value="track14">Track 14: Smart grid and Energy efficiency </option>
-                                      <option value="track15">Track 15: Sustainable Manufacturing Processes for Low Carbon</option>
-                                      <option value="track16">Track 16: Lightning Talks</option>
-                                      <option value="track17">Track 17:  Poster Presentations</option>
+                              
 
-                                    </select>                                
-                                </div>
-                              </div>
-
-                              <div class="col-sm-12 mb-3">
+                              <!-- <div class="col-sm-12 mb-3">
                                 <div class="form-group">
                                     <label for="file">Select a file:</label>
                                     <input type="file" id="file" name="file" required>                                
                                   </div>
-                              </div>
+                              </div> -->
 
                             
           
                               <div class="col-sm-12 mb-3">
-                                  <button type="submit" name="submit" class="btn btn-primary">Upload</button>
+                                  <button type="submit" name="submit" class="btn btn-primary">Register</button>
                               </div>
           
                           </div>
@@ -300,7 +325,6 @@
                PIN - 473226, INDIA <br>
               <strong>Phone: </strong> Ph: +91-7544-267051, 267310, 267311, 267312<br>
               <strong>Email: </strong><a href="mailto:coere@jutguna.in"> coere@jutguna.in </a>,<a href="mailto:coere@juet.ac.in"> coere@juet.ac.in </a>,<a href="mailto:contact@juet.ac.in"> contact@juet.ac.in </a>
-
 
             </p>
 

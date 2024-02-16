@@ -29,7 +29,12 @@
   <link href="css/style.css" rel="stylesheet">
 
 </head>
-
+<style>
+  /* #first-og .col-md-6{
+    max-width: 50%;
+    flex:0 0 50%;
+  } */
+</style>
 <body>
 
   <!--==========================
@@ -72,7 +77,7 @@
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#sponsors">Sponsors</a></li>
           <li><a href="#contact">Contact</a></li>
-          <!-- <li class="buy-tickets"><a href="#buy-tickets">Login</a></li> -->
+          <li class="login"><a href="login.html">Login</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -156,12 +161,12 @@
           </div>
         </div>
         <br>
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-lg-6" style="flex: auto; max-width: 100%;">
             <h2>Jaypee Education System</h2>
             <p>---</p>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -176,8 +181,8 @@
       </div>
 
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
+        <div class="row" id="first-og">
+          <div class="col-lg-4 col-md-6 " style="margin-left: 160px;">
             <div class="og">
               <img src="img/speakers/jaiprakashgaurji.jpg" alt="Member 1" class="img-fluid">
               <div class="details">
@@ -187,7 +192,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" style="margin-right: 160px;">
             <div class="og">
               <img src="img/speakers/manojgaurji.jpeg" alt="Member 2" class="img-fluid">
               <div class="details">
@@ -201,7 +206,7 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" style="margin-left: 160px;">
             <div class="og">
               <img src="img/speakers/scsaxenaji.jpg" alt="Member 3" class="img-fluid">
               <div class="details">
@@ -214,7 +219,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" style="margin-right: 160px;">
             <div class="og">
               <img src="img/speakers/dkraiji.jpg" alt="Member 4" class="img-fluid">
               <div class="details">
@@ -330,7 +335,7 @@
         </div>
       </div> -->
 
-      <!-- <br><br> -->
+      <br><br>
 
       <div class="container">
         <div class="container-header">
@@ -339,11 +344,11 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6" style="margin-left: 380px;">
               <div class="og">
-                <img src="img/speakers/Dr. Raj Kumar Satankar.jpg" alt="Member 1" class="img-fluid">
+                <img src="img/speakers/Dr. Raj Kumar Satankar.jpeg" alt="Member 1" class="img-fluid">
                 <div class="details">
-                  <h3><a href="#">Dr. Raj Kumar Satankar</a></h3>
+                  <h3>Dr. Raj Kumar Satankar</h3>
                   <p>Ph.D., Indian Institute of Technology Jodhpur</p>
                 </div>
               </div>
@@ -987,21 +992,21 @@
 
         <div>
           <ul>
-            <li><h4>Presentation requirement</h4>
-                <p>To ensure proper registration and publication of Technical Publications and Technicalities, the following requirements must be met:</p>
+            <li><h2>Presentation Requirement</h2>
+                <p>To ensure proper registration and publication, following requirements must be met:</p>
                 <ol>
-                  <li><h4>Author Registration:</h4><p>At least one author must be registered at the Full Conference Author rate.</p></li>
-                  <li><h4>Paper and Presentation Limit:</h4><p>One author registration can cover a maximum two (2) technical or presentation-only submissions along with two (2) additional poster presentations.</p></li>
-                  <li><h4>Presentations:</h4><p>If author intends to present more two (2) papers or presentation-only at the podium, they request a co-author register.</p></li>
-                  <li><h4>Poster Presentations: </h4><p>All authors of a presentation are students, the author can register at appropriate student rate, provided do so before the Advanced Registration deadline.</p></li>
-                  <li><h4>Student Registration Requirements: </h4><p>Student registration rates are exclusively available to full-time undergraduate and graduate students who have not yet received their Ph.D. Post-doctoral researchers cannot register as students. Proof of student status, such as a copy of the student identification card or a letter from the institution's registrar, is required to qualify for the student rate.</p></li>
-                  <li><h4>Presenter Attendance Policy:</h4><p>In order for a paper to be published in the official archival proceedings, it must be presented at the conference by an author or co-author. These proceedings are registered with the Library of conference and abstracted and indexed.</p></li>
-                  <li><h4>Conference Format:</h4><p>Technical conferences will be conducted as in-person events.</p></li>
+                  <li><h4>Author Registration:</h4><p>At least one author must be registered by paying the registration fee.</p></li>
+                  <li><h4>Paper and Presentation Limit:</h4><p>One author registration can cover maximum two (2) technical presentations or submissions along with two (2 additional poster presentations).</p></li>
+                  <li><h4>Presentations:</h4><p>If author intends to present more papers for example two (2) papers or presentation, they request a co-author registration.</p></li>
+                  <li><h4>Poster Presentations: </h4><p>Only students can present the poster presentations, the author (student) can register at appropriate student registration fee before the registration deadline.</p></li>
+                  <li><h4>Student Registration Requirements: </h4><p>Student registrations are exclusively available to full-time undergraduate, graduate students and post graduate students. Proof of student status, such as a copy of the student identification card or a letter from the head of the institute/ registrar, is required to register as student.</p></li>
+                  <li><h4>Presenter Attendance Policy:</h4><p>In order for a paper to be published in the official archival proceedings, it must be presented at the conference by an author or co-author. These proceedings are registered with the Library of conference, abstracted and indexed.</p></li>
+                  <li><h4>Conference Format:</h4><p>Technical conference will be conducted as in-person events.</p></li>
                   <li><h4>In-Person Requirement:</h4><p>Video and/or zoom presentations will not be accepted as substitutes for in-person presentations during conferences.</p></li>
   
                 </ol>
             </li>
-            <li><h4>Co-authors login requirement</h4>
+            <li><h2>Co-authors login requirement</h2>
                 <ul>
                   <li>Help Desk
                     <ol>
@@ -1010,21 +1015,28 @@
                       <li>Issue topic</li>
                       <li>Description of Issue</li>
                       <li>Attachment</li>
+                      <li>Submit</li>
                     </ol>
                   </li>
                 </ul>
             </li>
             <br>
-            <li><h4>Submit</h4></li>
-            <br>
-            <li><h4>Code of conduct/Anti-Harassment </h4>
+            <li><h2>Code of conduct/Anti-Harassment </h2>
                 <ol>
-                  <li><p>COR-RE of JUET, Guna is committed to providing a safe, productive, and inclusive environment that is free from any form of unlawful discrimination or harassment. This includes but is not limited to, behavior based on race, national origin, citizenship, sex, gender identity or expression, age, sexual orientation, disability, or familial status. Harassment can take different forms such as verbal comments, jokes, imagery, unwanted physical contact, or sexual attention.</p></li>
+                  <li><p>Centre of Excellence for Renewable Energy of JUET, Guna is committed to providing a safe, productive, and inclusive environment that is free from any form of unlawful discrimination or harassment. This includes but is not limited to, behavior based on race, national origin, citizenship, sex, gender identity or expression, age, sexual orientation, disability, or familial status. Harassment can take different forms such as verbal comments, jokes, imagery, unwanted physical contact, or sexual attention.</p></li>
                   <li><p>If you have any concerns related to this policy, or if you witness or experience any conduct that you believe violates this policy, please immediately contact anCOE-RE staff member or send an email to coere@juetguna.in. You can also report concerns anonymously to the COE-RE at 1800121884444</p></li>
                   <li><p>COE-RE reserves the right to determine, at its sole discretion, if a behavior violates this policy. Consequences for violating this policy may include a warning, removal from or denial of access to COE-RE-sponsored meetings and events, temporary or permanent exclusion from future COE-RE-sponsored meetings or events, or other appropriate actions. Please note that no refunds will be issued to any participant who is asked to leave a meeting due to a violation of this policy.</p></li>
                 </ol>
             </li>
-            <li><h4>Declaration for the conflict of interest</h4></li>
+            <li><h2>Cancellation and Substitutions</h2>
+            <ol>
+              <li><p>Cancellations and substitutions are allowed. However, full registration fees will be charged unless a cancellation notice is sent in writing, and received or faxed on or before 1 November 2024 to the registration chair. All the registrations for published papers in the Proceedings cannot be cancelled.
+                </p></li>
+              <li><p>A 200 USD handling fee will be applied to all cancelled registrations. Fees cannot be refunded for registrations cancelled after the deadline. No-shows will be billed.
+              </p></li>
+            </ol></li>
+
+            <li><h2>Declaration for the conflict of interest</h2></li>
 
           </ul>
 
@@ -1054,12 +1066,10 @@
         <a href="#" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/7.JPG" alt=""></a>
         <a href="#" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/8.JPG" alt=""></a>
         <a href="#" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/9.jpeg" alt=""></a>
-        <a href="#" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/10.JPG" alt=""></a>
+        <a href="#" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/10.jpeg" alt=""></a>
         <a href="#" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/11.jpeg" alt=""></a>
-        <a href="#" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/12.jpeg" alt=""></a>
         <a href="#" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/13.jpeg" alt=""></a>
-        <a href="#" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/14.jpeg" alt=""></a>
-        <a href="#" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/15.jpeg" alt=""></a>
+        
       </div>
 
     </section>
@@ -1157,7 +1167,7 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">+91 xxxxxxxxx</a></p>
+              <p>Ph:<a href="tel:+91-7544-267051"> +91-7544-267051</a>, <a href="tel:+91-7544-267310">267310</a>, <a href="tel:+91-7544-267311">267311</a>, <a href="tel:+91-7544-267312">267312</a></p>
             </div>
           </div>
 
@@ -1167,12 +1177,13 @@
               <h3>Email</h3>
               <p><a href="mailto:coere@jutguna.in">coere@jutguna.in</a></p>
               <p><a href="mailto:coere@juet.ac.in">coere@juet.ac.in</a></p>
+              <p><a href="mailto:contact@juet.ac.in">contact@juet.ac.in </a></p>
             </div>
           </div>
 
         </div>
 
-        <div class="form">
+        <!-- <div class="form">
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
           <form action="" method="post" role="form" class="contactForm">
@@ -1196,7 +1207,7 @@
             </div>
             <div class="text-center"><button type="submit">Send Message</button></div>
           </form>
-        </div>
+        </div> -->
 
       </div>
     </section><!-- #contact -->
@@ -1213,7 +1224,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <img src="img/Jaypee-Group.jpg" alt="Jaypee_Group">
+            <img src="img/sponsors/Jaypee_Group_Logo.svg.png" alt="Jaypee_Group">
             <!-- <p>---</p> -->
           </div>
 
@@ -1231,21 +1242,22 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              Jaypee University of Engineering & Technology <br>
-              Guna, Madhya Pradesh<br>
-              India <br>
-              <strong>Phone:</strong> +91 xxxxxxxxx<br>
-              <strong>Email:</strong><a href="mailto:coere@jutguna.in">coere@jutguna.in</a><br>
-              <strong>Email:</strong><a href="mailto:coere@juet.ac.in">coere@juet.ac.in</a><br>
+              Jaypee University of Engineering and Technology, <br>
+              A-B Road, Raghogarh, Distt. - Guna (M.P.),<br>
+               PIN - 473226, INDIA <br>
+              <strong>Phone: </strong> Ph: +91-7544-267051, 267310, 267311, 267312<br>
+              <strong>Email: </strong><a href="mailto:coere@jutguna.in"> coere@jutguna.in </a>,<a href="mailto:coere@juet.ac.in"> coere@juet.ac.in </a>,<a href="mailto:contact@juet.ac.in"> contact@juet.ac.in </a>
+
+
             </p>
 
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <!-- <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i> <img src="img/twitter.png" alt="" srcset=""> </a>
               <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
               <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
               <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
               <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
+            </div> -->
 
           </div>
 
